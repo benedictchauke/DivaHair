@@ -1,2 +1,2 @@
 # DivaHair
-Brazillian hair sale Web Application
+Brazillian hair for sale Web Application
