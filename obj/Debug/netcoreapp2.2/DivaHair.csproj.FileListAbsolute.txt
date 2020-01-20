@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.deps.json
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.runtimeconfig.json
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.runtimeconfig.dev.json
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.dll
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.pdb
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.AssemblyInfo.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.dll
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.pdb
