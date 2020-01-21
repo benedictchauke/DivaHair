@@ -1,10 +1,21 @@
-﻿var theForm = document.getElementById("theForm");
-theForm.hidden = true;
+﻿$(document).ready(function () {
+    var theForm = $("#theForm");
+    theForm.hide();
 
-var button = document.getElementById("Buy");
-button.addEventListener("click", function () {
-    alert("Buying Item");
+    var button = $("#Buy");
+    button.on("click", function () {
+        console.log("Buying Item");
+    });
+
+    var info = $(".prop li");
+    info.on("click", function () {
+        console.log("you clicked on" + $(this).text());
+    });
+
+    var $loggin = $("#loggin");
+    var $popForm = $(".popForm");
+
+    $loggin.on("click", function () {
+        $popForm.toggle(1000);
+    });
 });
-
-var info = document.getElementByClassName("prop");
-var listItems = info.item[0].children;
