@@ -21,3 +21,4 @@ C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Ra
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorTargetAssemblyInfo.cs
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.Views.pdb
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.csproj.CopyComplete
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs

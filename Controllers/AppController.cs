@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DivaHair.Controllers
 {
-    public class ControllerApp : Controller
+    public class AppController : Controller
     {
         public IActionResult Index()
         {
