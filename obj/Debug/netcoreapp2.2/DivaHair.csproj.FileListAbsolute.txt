@@ -12,3 +12,12 @@ C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Di
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorTargetAssemblyInfo.cache
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.dll
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.pdb
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.Views.dll
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\bin\Debug\netcoreapp2.2\DivaHair.Views.pdb
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.TagHelpers.input.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.TagHelpers.output.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorCoreGenerate.cache
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\App\index.g.cshtml.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.RazorTargetAssemblyInfo.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.Views.pdb
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\DivaHair.csproj.CopyComplete

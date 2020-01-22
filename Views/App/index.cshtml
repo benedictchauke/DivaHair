@@ -1,1 +1,68 @@
-﻿
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diva Hair : @ViewBag.Title </title>
+    <link href="~/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h2>@ViewBag.Title</h2>
+    <div class="info">
+        <img src="/img/straight/people/8inchcut.jpg">
+        <h3>8-inch + Closure</h3>
+        <ul class="prop">
+            <li>Price 3 Bundles: R700.00</li>
+            <li>Grade: 10A</li>
+            <li>Shipment Fee: R100.00</li>
+            <li>Closure Only 8-inch: R230.00 </li>
+            <li>Closure Only 10-inch: R250.00 </li>
+            <li>Total Discount Price (3 Bundles + 8-inch Closure): R830</li>
+            <li>Total Discount Price (3 Bundles + 10-inch Closure): R850</li>
+        </ul>
+        <button id="Buy">Buy</button>
+    </div>
+    <div id="theForm">
+        <form>
+            <label>Your Name:</label>
+            <input />
+            <br />
+            <label>Email:</label>
+            <input type="email" />
+            <br />
+            <label>Subject:</label>
+            <input type="text" />
+            <br />
+            <label>Message:</label>
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+    <div>
+        <div id="loggin">login</div>
+        <form class="popForm">
+            <div>
+                <label>Username: </label>
+                <input />
+            </div>
+            <div>
+                <label>Password: </label>
+                <input type="password" />
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>Remember Me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Login" />
+            </div>
+        </form>
+    </div>
+
+    <script src="~/lib/jQuery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+</body>
+</html>
