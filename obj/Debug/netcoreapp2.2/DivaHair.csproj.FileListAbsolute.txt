@@ -25,3 +25,5 @@ C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Ra
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\App\About.g.cshtml.cs
 C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\App\Contact.g.cshtml.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
