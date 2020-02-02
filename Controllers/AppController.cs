@@ -1,4 +1,5 @@
-﻿using DivaHair.ViewModels;
+﻿using DivaHair.Services;
+using DivaHair.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace DivaHair.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            _mailService = mailService;
+        }
         public IActionResult Index()
         {
             return View();
@@ -27,7 +34,9 @@ namespace DivaHair.Controllers
             if (ModelState.IsValid)
             {
                 //send the email
-                
+                _mailService.SendMessage("benedictchauke@hotmail.com", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+                ViewBag.UseMessage = "Mail Sent";
+                ModelState.Clear();
             }
             else
             {
