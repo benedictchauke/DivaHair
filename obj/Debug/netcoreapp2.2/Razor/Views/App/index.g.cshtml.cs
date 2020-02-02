@@ -18,8 +18,13 @@ using DivaHair.Controllers;
 
 #line default
 #line hidden
+#line 2 "C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\Views\_ViewImports.cshtml"
+using DivaHair.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f56037c7f3d1f5a106bc89b793056a419e2219e2", @"/Views/App/index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e0a6801c5860c62df1f8098254e9d6862e6f8d47", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98f2f57b452e0b3166c46b40aa7da281239a7bc9", @"/Views/_ViewImports.cshtml")]
     public class Views_App_index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/img/straight/people/8inchcut.jpg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +63,7 @@ using DivaHair.Controllers;
             WriteLiteral("\r\n    <div class=\"info\">\r\n        ");
             EndContext();
             BeginContext(75, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f56037c7f3d1f5a106bc89b793056a419e2219e24242", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f56037c7f3d1f5a106bc89b793056a419e2219e24392", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -90,7 +95,7 @@ using DivaHair.Controllers;
         ");
             EndContext();
             BeginContext(669, 447, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f56037c7f3d1f5a106bc89b793056a419e2219e25965", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f56037c7f3d1f5a106bc89b793056a419e2219e26115", async() => {
                 BeginContext(675, 434, true);
                 WriteLiteral(@"
             <label>Your Name:</label>
@@ -126,7 +131,7 @@ using DivaHair.Controllers;
             WriteLiteral("\r\n    </div>\r\n    <div>\r\n        <div id=\"loggin\">login</div>\r\n        ");
             EndContext();
             BeginContext(1187, 494, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f56037c7f3d1f5a106bc89b793056a419e2219e27934", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f56037c7f3d1f5a106bc89b793056a419e2219e28084", async() => {
                 BeginContext(1209, 465, true);
                 WriteLiteral(@"
             <div>

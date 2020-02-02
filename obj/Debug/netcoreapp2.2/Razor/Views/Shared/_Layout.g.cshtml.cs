@@ -18,8 +18,13 @@ using DivaHair.Controllers;
 
 #line default
 #line hidden
+#line 2 "C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\Views\_ViewImports.cshtml"
+using DivaHair.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d0", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e0a6801c5860c62df1f8098254e9d6862e6f8d47", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98f2f57b452e0b3166c46b40aa7da281239a7bc9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/style.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -59,7 +64,7 @@ using DivaHair.Controllers;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 119, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d06146", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d06296", async() => {
                 BeginContext(31, 25, true);
                 WriteLiteral("\r\n    <title>Diva Hair : ");
                 EndContext();
@@ -74,7 +79,7 @@ using DivaHair.Controllers;
                 WriteLiteral(" </title>\r\n    ");
                 EndContext();
                 BeginContext(85, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d06919", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d07069", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,12 +113,12 @@ using DivaHair.Controllers;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(146, 642, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d09051", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d09201", async() => {
                 BeginContext(152, 111, true);
                 WriteLiteral("\r\n    <header>\r\n        <h1>Welcome to Diva Hair</h1>\r\n\r\n        <menu>\r\n            <ul>\r\n                <li>");
                 EndContext();
                 BeginContext(263, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d09553", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d09703", async() => {
                     BeginContext(306, 4, true);
                     WriteLiteral("Home");
                     EndContext();
@@ -137,7 +142,7 @@ using DivaHair.Controllers;
                 WriteLiteral("</li>\r\n                <li>");
                 EndContext();
                 BeginContext(341, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d011248", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d011398", async() => {
                     BeginContext(386, 7, true);
                     WriteLiteral("Contact");
                     EndContext();
@@ -161,7 +166,7 @@ using DivaHair.Controllers;
                 WriteLiteral("</li>\r\n                <li>");
                 EndContext();
                 BeginContext(424, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d012947", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d013097", async() => {
                     BeginContext(467, 5, true);
                     WriteLiteral("About");
                     EndContext();
@@ -205,7 +210,7 @@ using DivaHair.Controllers;
                 WriteLiteral("\r\n    </section>\r\n    <footer>Copyright 2020 Diva Hair</footer>\r\n   \r\n\r\n    ");
                 EndContext();
                 BeginContext(681, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d015498", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d015648", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -223,7 +228,7 @@ using DivaHair.Controllers;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(742, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d016752", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c45dd26c7d84a3a4e6d6e6b94b7e0c00b6e64d016902", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

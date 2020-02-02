@@ -18,8 +18,13 @@ using DivaHair.Controllers;
 
 #line default
 #line hidden
+#line 2 "C:\Users\User\Desktop\Coding DotNet\DivaHair\DivaHair\Views\_ViewImports.cshtml"
+using DivaHair.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a00babdb89a932ce1579daf00f842fe0e3e08a79", @"/Views/App/About.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e0a6801c5860c62df1f8098254e9d6862e6f8d47", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98f2f57b452e0b3166c46b40aa7da281239a7bc9", @"/Views/_ViewImports.cshtml")]
     public class Views_App_About : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
