@@ -38,7 +38,7 @@ namespace DivaHair
             app.UseMvc( cfg =>
             {
                 cfg.MapRoute("Default", 
-                    "/{controller}/{action}/{id?}", 
+                    "{controller}/{action}/{id?}", 
                     new { controller = "App", Action = "Index" });
             });
         }
