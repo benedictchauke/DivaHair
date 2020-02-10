@@ -19,6 +19,13 @@ namespace DivaHair
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            .ConfigureAppConfiguration (SetupConfiguration)
+            .UseStartup<Startup>();
+            .Build();
+
+        private static void SetupConfiguration(WebHostBuilderContext arg1, IConfigurationBuilder arg2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
