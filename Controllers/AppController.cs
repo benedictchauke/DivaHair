@@ -1,4 +1,5 @@
-﻿using DivaHair.Services;
+﻿using DivaHair.Data;
+using DivaHair.Services;
 using DivaHair.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,10 +13,12 @@ namespace DivaHair.Controllers
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
+        private readonly HairContext _context;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, HairContext context)
         {
             _mailService = mailService;
+            _context = context;
         }
         public IActionResult Index()
         {
@@ -50,6 +53,20 @@ namespace DivaHair.Controllers
         {
             ViewBag.Title = "About Us";
             return View();
+        }
+
+        public IActionResult Shop()
+        {
+            /* var results = _context.Products
+                .OrderBy(p => p.Category)
+                .ToList();
+            return View(); */
+
+            var results = from p in _context.Products
+                          orderby p.Category
+                          select p;
+            return View(results.ToList());
+ 
         }
     }
 }

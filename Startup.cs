@@ -28,7 +28,7 @@ namespace DivaHair
            
             services.AddDbContext<HairContext>(cfg =>
             {
-                cfg.UseSqlServer(_config.GetConnectionString("HairConnectString"));
+                cfg.UseSqlServer(_config.GetConnectionString("HairConnectionString"));
             });
 
             services.AddTransient<IMailService, NullMailService>();
