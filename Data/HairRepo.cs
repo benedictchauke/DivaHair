@@ -35,5 +35,6 @@ namespace DivaHair.Data
         {
             return _ctx.SaveChanges() > 0; 
         }
-     }
+
+    }
 }

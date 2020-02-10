@@ -8,6 +8,6 @@ namespace DivaHair.Data
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetProductsByCategory(string category);
 
-        bool SaveChanges();
+        bool SaveAll();
     }
 }

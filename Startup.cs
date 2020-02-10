@@ -32,6 +32,7 @@ namespace DivaHair
             });
 
             services.AddTransient<IMailService, NullMailService>();
+            services.AddScoped<IHairRepo, HairRepo>(); 
             services.AddTransient<HairSeeds>();
             //Support for real maail service
             services.AddMvc();
