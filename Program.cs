@@ -21,11 +21,14 @@ namespace DivaHair
             WebHost.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration (SetupConfiguration)
             .UseStartup<Startup>();
-            .Build();
 
-        private static void SetupConfiguration(WebHostBuilderContext arg1, IConfigurationBuilder arg2)
+        private static void SetupConfiguration(WebHostBuilderContext ctx, IConfigurationBuilder builder)
         {
-            throw new NotImplementedException();
+            //this will remove the default configuration options
+            builder.Sources.Clear();
+
+            builder.AddJsonFile("config.json", false, true)
+                   .AddEnvironmentVariables(); 
         }
     }
 }
