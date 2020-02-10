@@ -32,6 +32,7 @@ namespace DivaHair
             });
 
             services.AddTransient<IMailService, NullMailService>();
+            services.AddTransient<HairSeeds>();
             //Support for real maail service
             services.AddMvc();
         }
@@ -56,6 +57,16 @@ namespace DivaHair
                     "{controller}/{action}/{id?}", 
                     new { controller = "App", Action = "Index" });
             });
+
+            if (env.IsDevelopment())
+            {
+                // new HairSeeds()
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var seeds = scope.ServiceProvider.GetService<HairSeeds>();
+                    seeds.Seed();
+                }
+            }
         }
     }
 }
