@@ -3,12 +3,12 @@
     "Id": 0,
     "Category": "",
     "Size": "",
-    "Price":,
+    "Price":700,
     "HairClosurePrice": "",
     "Grade": "",
     "HairDescription": "",
-    "PurchaseDate": "1853-03-30T00:00:00",
-    "DeliveryDate": "2020-02-29T00:00:00",
+    "PurchaseDate": "2020-03-30T00:00:00",
+    "DeliveryDate": "2020-02-29T00:00:00"
    
   }
 ]
