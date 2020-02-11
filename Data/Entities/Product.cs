@@ -12,6 +12,7 @@ namespace DivaHair.Data.Entities
     public string Category { get; set; }
     public string Size { get; set; }
     public decimal Price { get; set; }
+    public decimal HairClosurePrice { get; set; }
     public string Grade { get; set; }
     public string HairDescription { get; set; }
     public DateTime PurchaseDate { get; set; }

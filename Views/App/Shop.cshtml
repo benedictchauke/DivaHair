@@ -3,5 +3,18 @@
 <p>Count: @Model.Count()</p>
 @foreach (var p in Model)
 {
-    <li>@p.Size</li>
+    <div class="col-md-3">
+        <div class="well well-sm">
+            <img src="~/img/straight/people/@(p.Id).jpg" class="img-responsive" @p.Size/>
+            <h3>@p.Category  - @p.Size </h3>
+            <ul class="prop">
+                <li>Price 3 Bundles: @p.Price  </li>
+                <li>Grade: @p.Grade</li>
+                <li>Size: @p.Size</li>
+                <li>Closure Only 10-inch: @p.HairClosurePrice</li>
+                <li>Total Discount Price (3 Bundles + 10-inch Closure): @p.HairDescription</li>
+            </ul>
+            <button id="Buy">Buy</button>
+        </div>
+    </div>
 }

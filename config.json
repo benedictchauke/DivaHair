@@ -4,5 +4,11 @@
   },
   "ConnectionStrings": {
     "HairConnectionString": "server=(localdb)\\v11.0;Database=DivaHairDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft":  "Warning"
+    }
   }
 }
