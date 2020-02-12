@@ -1,5 +1,4 @@
 ﻿using DivaHair.Data;
-using DivaHair.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace DivaHair.Controllers
 {
-    [Route("api/[Controller]")]
-    public class ProductsController : Controller
+    [Route("Api/[Controller]")]
+    public class OrdersController : Controller
     {
+        
         private readonly IHairRepo _repository;
-        private readonly ILogger<ProductsController> _logger;
+        private readonly ILogger<OrdersController> _logger;
 
-        public ProductsController(IHairRepo repository, ILogger<ProductsController> logger)
+        public OrdersController(IHairRepo repository, ILogger<OrdersController> logger)
         {
             _repository = repository;
             _logger = logger;
@@ -27,15 +27,14 @@ namespace DivaHair.Controllers
         {
             try
             {
-                return Ok(_repository.GetAllProducts());
+                return Ok(_repository.GetAllOrders());
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
-                _logger.LogError($"Failed to get products: {exc}");
-                return BadRequest("Failed to get products");
+                _logger.LogError($"Failed to get orders: {exc}");
+                return BadRequest("Failed to get orders");
             }
-            
         }
-        
+
     }
 }

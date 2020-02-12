@@ -9,5 +9,6 @@ namespace DivaHair.Data
         IEnumerable<Product> GetProductsByCategory(string category);
 
         bool SaveAll();
+        IEnumerable<Order> GetAllOrders();
     }
 }
