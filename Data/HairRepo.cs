@@ -1,4 +1,5 @@
 ﻿using DivaHair.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace DivaHair.Data
 
         public IEnumerable<Order> GetAllOrders()
         {
-            return _ctx.Orders.ToList();
+            return _ctx.Orders.Include(o => o.Items).ToList();
         }
 
         public IEnumerable<Product>GetAllProducts()
