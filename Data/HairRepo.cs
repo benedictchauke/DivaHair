@@ -20,6 +20,11 @@ namespace DivaHair.Data
             _logger = logger;
         }
 
+        public void AddEntity(object model)
+        {
+            _ctx.Add(model);
+        }
+
         public IEnumerable<Order> GetAllOrders()
         {
             return _ctx.Orders
@@ -66,5 +71,9 @@ namespace DivaHair.Data
             return _ctx.SaveChanges() > 0; 
         }
 
+        Order IHairRepo.GetOrderById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

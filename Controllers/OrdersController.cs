@@ -1,4 +1,6 @@
 ﻿using DivaHair.Data;
+using DivaHair.Data.Entities;
+using DivaHair.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -49,6 +51,49 @@ namespace DivaHair.Controllers
                 _logger.LogError($"Failed to get orders: {exc}");
                 return BadRequest("Failed to get orders");
             }
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody]ViewHairOrder model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var newOrder = new Order()
+                    {
+                        OrderDate = model.OrderDate,
+                        OrderNumber = model.OrderNumber,
+                        Id = model.OrderId
+                    };
+
+                    if(newOrder.OrderDate == DateTime.MinValue)
+                    {
+                        newOrder.OrderDate = DateTime.Now;
+                    }
+
+                    _repository.AddEntity(model);
+                    if (_repository.SaveAll())
+                    {
+                        var vm = new ViewHairOrder()
+                        {
+                            OrderId = newOrder.Id,
+                            OrderDate = newOrder.OrderDate,
+                            OrderNumber = newOrder.OrderNumber
+                        };
+                        return Created($"/api/orders/{vm.OrderId}", vm);
+                    }
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+            }
+            catch (Exception exc)
+            {
+                _logger.LogError($"Failed to save the order: {exc}");
+            }
+            return BadRequest("Failed to save the order");
         }
 
     }
