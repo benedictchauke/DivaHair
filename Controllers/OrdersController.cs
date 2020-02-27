@@ -1,4 +1,5 @@
-﻿using DivaHair.Data;
+﻿using AutoMapper;
+using DivaHair.Data;
 using DivaHair.Data.Entities;
 using DivaHair.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +18,13 @@ namespace DivaHair.Controllers
         
         private readonly IHairRepo _repository;
         private readonly ILogger<OrdersController> _logger;
+        private readonly IMapper _mapper;
 
-        public OrdersController(IHairRepo repository, ILogger<OrdersController> logger)
+        public OrdersController(IHairRepo repository, ILogger<OrdersController> logger, IMapper _mapper)
         {
             _repository = repository;
             _logger = logger;
+            _mapper = this._mapper;
         }
 
         [HttpGet]
@@ -29,7 +32,7 @@ namespace DivaHair.Controllers
         {
             try
             {
-                return Ok(_repository.GetAllOrders());
+                return Ok(_mapper.Map<IEnumerable<Order>, IEnumerable<ViewHairOrder>>(_repository.GetAllOrders()));
             }
             catch (Exception exc)
             {
@@ -44,7 +47,8 @@ namespace DivaHair.Controllers
             try
             {
                 var order = _repository.GetOrderById(id);
-                return order != null ? Ok(order) : (IActionResult)NotFound(); ;                
+                if (order != null) return Ok(_mapper.Map<Order, ViewHairOrder>(order));
+                else return NotFound();                 
             }
             catch (Exception exc)
             {
@@ -60,12 +64,7 @@ namespace DivaHair.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var newOrder = new Order()
-                    {
-                        OrderDate = model.OrderDate,
-                        OrderNumber = model.OrderNumber,
-                        Id = model.OrderId
-                    };
+                    var newOrder = _mapper.Map<ViewHairOrder, Order>(model);
 
                     if(newOrder.OrderDate == DateTime.MinValue)
                     {
@@ -75,13 +74,7 @@ namespace DivaHair.Controllers
                     _repository.AddEntity(model);
                     if (_repository.SaveAll())
                     {
-                        var vm = new ViewHairOrder()
-                        {
-                            OrderId = newOrder.Id,
-                            OrderDate = newOrder.OrderDate,
-                            OrderNumber = newOrder.OrderNumber
-                        };
-                        return Created($"/api/orders/{vm.OrderId}", vm);
+                        return Created($"/api/orders/{newOrder.Id}", _mapper.Map<Order, ViewHairOrder>(newOrder));
                     }
                 }
                 else

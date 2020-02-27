@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using DivaHair.Data;
 using DivaHair.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,11 +27,14 @@ namespace DivaHair
             {
                 cfg.UseSqlServer(_config.GetConnectionString("HairConnectionString"));
             });
+            services.AddAutoMapper();
 
             services.AddTransient<IMailService, NullMailService>();
-            services.AddScoped<IHairRepo, HairRepo>(); 
+
+            services.AddScoped<IHairRepo, HairRepo>();
+            
             services.AddTransient<HairSeeds>();
-            //Support for real maail service
+            
             services.AddMvc()
                 .AddJsonOptions(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
         }
