@@ -16,6 +16,9 @@ namespace DivaHair.Data
             CreateMap<Order, ViewHairOrder>()
                 .ForMember(o => o.OrderId, exc => exc.MapFrom(o => o.Id))
                 .ReverseMap();
+
+            CreateMap<OrderItem, OrderItemHairOrder>()
+                .ReverseMap();
         }
     }
 }

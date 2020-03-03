@@ -20,19 +20,22 @@ namespace DivaHair.Controllers
         private readonly ILogger<OrdersController> _logger;
         private readonly IMapper _mapper;
 
-        public OrdersController(IHairRepo repository, ILogger<OrdersController> logger, IMapper _mapper)
+        public OrdersController(IHairRepo repository, ILogger<OrdersController> logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
-            _mapper = this._mapper;
+            _mapper =  mapper;
         }
 
+ 
+
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(bool includeItems = true)
         {
             try
             {
-                return Ok(_mapper.Map<IEnumerable<Order>, IEnumerable<ViewHairOrder>>(_repository.GetAllOrders()));
+                var results = _repository.GetAllOrders(includeItems);
+                return Ok(_mapper.Map<IEnumerable<Order>, IEnumerable<ViewHairOrder>>(results));
             }
             catch (Exception exc)
             {

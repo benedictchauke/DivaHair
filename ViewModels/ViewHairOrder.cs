@@ -14,5 +14,7 @@ namespace DivaHair.ViewModels
         [Required]
         [MinLength(4)]
         public string OrderNumber { get; set; }
+
+        public ICollection<OrderItemHairOrder> Items { get; set; }
     }
 }

@@ -15,18 +15,6 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "AutoMapper.Collection/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "9.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/AutoMapper.Collection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/AutoMapper.Collection.dll": {}
-        }
-      },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -4495,19 +4483,6 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
-      ]
-    },
-    "AutoMapper.Collection/6.0.0": {
-      "sha512": "xFCr0PujlK5HB9wmAQ+RbFBTEt7VIbT08ZcG24Bf5CYoR7hJKMyFju/dSSzrpxnDXtpFyqd3Zwmu7UU4L1iD4Q==",
-      "type": "package",
-      "path": "automapper.collection/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "automapper.collection.6.0.0.nupkg.sha512",
-        "automapper.collection.nuspec",
-        "lib/net461/AutoMapper.Collection.dll",
-        "lib/netstandard2.0/AutoMapper.Collection.dll"
       ]
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
@@ -12169,7 +12144,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "AutoMapper >= 9.0.0",
-      "AutoMapper.Collection >= 6.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -12220,10 +12194,6 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[9.0.0, )"
-          },
-          "AutoMapper.Collection": {
-            "target": "Package",
-            "version": "[6.0.0, )"
           },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
