@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "1ae87dc4fb43ef199a63b0f252836df06afcaecb"
+    "signature": "eccff59f7be7787c5ed3fa89b47a8ad75b75c12f"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,10 @@
       "DivaHair/1.0.0": {
         "dependencies": {
           "AutoMapper": "9.0.0",
+          "AutoMapper.Collection": "6.0.0",
+          "AutoMapper.Data": "4.1.0",
+          "AutoMapper.EF6": "2.0.0",
+          "AutoMapper.Extensions.ExpressionMapping": "3.1.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -50,6 +54,61 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Collection/6.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Collection.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Collection.dll": {}
+        }
+      },
+      "AutoMapper.Data/4.1.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Data.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Data.dll": {}
+        }
+      },
+      "AutoMapper.EF6/2.0.0": {
+        "runtime": {
+          "lib/net461/AutoMapper.EF6.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net461/AutoMapper.EF6.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.ExpressionMapping/3.1.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.ExpressionMapping.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
@@ -3275,6 +3334,34 @@
       "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
       "path": "automapper/9.0.0",
       "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Collection/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xFCr0PujlK5HB9wmAQ+RbFBTEt7VIbT08ZcG24Bf5CYoR7hJKMyFju/dSSzrpxnDXtpFyqd3Zwmu7UU4L1iD4Q==",
+      "path": "automapper.collection/6.0.0",
+      "hashPath": "automapper.collection.6.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Data/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CHjzCHzMnY1f/olFDk+9Zf/Nymk4QrKGtapUYOOWsg5DQcwYXeI5w2117Mb7T5TK0Eoj7uIWvkO7Hrb/5uT+3w==",
+      "path": "automapper.data/4.1.0",
+      "hashPath": "automapper.data.4.1.0.nupkg.sha512"
+    },
+    "AutoMapper.EF6/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9YbMrsp6aqovnnI3Hs8ho4vqqV5cIinjFEv9BJeRhncrIexMGjW7ySmLJ50fSHY9KPqzlG33+JAISfcKpPBG8g==",
+      "path": "automapper.ef6/2.0.0",
+      "hashPath": "automapper.ef6.2.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.ExpressionMapping/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BxvD5jLRfTp7N59GML5buIN/BvCegOJxLaQ8rOAAloHN8WK/AoLLt1IeI6Ft7oBTXVZejeL3WvNift1hUhhCfQ==",
+      "path": "automapper.extensions.expressionmapping/3.1.0",
+      "hashPath": "automapper.extensions.expressionmapping.3.1.0.nupkg.sha512"
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
       "type": "package",
